@@ -302,7 +302,7 @@ gantt
     와이어프레임           :         2024-02-13, 2d
     section FE&BE
     HTML, CSS 프론트 페이지제작      :         2024-02-13, 3d
-    JS 통해 Chat-GPT 연동             :         2024-02-13, 3d
+    JS 이용 Chat-GPT 및 Github Repo, URL 연동           :         2024-02-13, 3d
     기타 페이지 추가 및 꾸미기 :         2024-02-14, 2d
     section 테스트
     수정, 보안                     :         2024-02-14, 3d
