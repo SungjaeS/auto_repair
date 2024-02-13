@@ -40,7 +40,7 @@ Auto repair with Chatgpt
   - Amazon Lightsail
 ...중략...
 ### 2.2 배포 URL
-- [https://www.studyin.co.kr/](https://sungjaes.github.io/auto_repair/)
+- https://sungjaes.github.io/auto_repair/
 
 ### 2.3 URL 구조(모놀리식)
 - main
