@@ -25,10 +25,10 @@ Auto repair with Chatgpt
 ### 1.3 팀(Team)
 <table>
 	<tr>
-		<p align="center"><th>신성재</th></p>
+		<th>신성재</th>
 	</tr>
  	<tr>
-		<p align="center"><td><img src="my1.jpg" width="15%"></td></p>
+		<td><p align="center"><img src="my1.jpg" width="15%"></p></td>
 	</tr>
 </table>
 
