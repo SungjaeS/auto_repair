@@ -294,20 +294,20 @@ chatgpt auto repair
 gantt
     title 오토 리페어
     dateFormat  YYYY-MM-DD
-    section 기획
+    section 프로젝트 아이디어 기획
     목표와 기능       :         2024-02-13, 1d
     section 디자인
-    구현후 디자인 수정, 정립       :         2024-02-17, 1d
-    section 설계
+    구현후 수정, 정립       :         2024-02-17, 1d
+    section 페이지 설계
     와이어프레임           :         2024-02-13, 2d
     section FE&BE
     Github Repository, URL 생성 	:         2024-02-13, 1d
-    HTML, CSS 프론트 페이지제작      :         2024-02-13, 3d
-    JS로 Chat-GPT 연동           :         2024-02-13, 3d
+    HTML/CSS로 UI 구현      :         2024-02-13, 3d
+    JS로 AI API(Chat-GPT)연동           :         2024-02-13, 3d
     기타 페이지 추가 및 꾸미기 :         2024-02-14, 2d
     section 테스트
-    수정, 보안                     :         2024-02-14, 3d
-    section 완료
+    수정, 보안                     :         2024-02-15, 2d
+    section 프로젝트 완료
     시연, 설명               :         2024-02-16, 1d
 ```
 
