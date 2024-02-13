@@ -1,5 +1,5 @@
 # auto_repair
-chatgpt auto repair
+auto repair by chatgpt
 
 ## 1. 목표와 기능
 
