@@ -24,14 +24,14 @@ chatgpt auto repair
  
 ### 1.3 팀(Team)
 
-<table>
-	<tr>
+
+
 		<th>신성재</th>
 
-		<td><img src="my.jpg" width="100%"></td>
+		<img src="my.jpg" width="100%">
 
-	</tr>
-</table>
+	
+
 
 ## 2. 개발 환경 및 배포 URL
 ### 2.1 개발 환경
