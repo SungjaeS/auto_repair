@@ -23,14 +23,14 @@ Auto repair with Chatgpt
 - 향후 전용 차량스캔툴과 연동하여 더 쉽고 빠르고 정확한 값을 보여줄수도 있을거로 예상기능.
  
 ### 1.3 팀(Team)
-<table>
+
 	<tr>
 		<th>신성재</th>
 	</tr>
  	<tr>
 		<td><img src="my1.jpg" width="15%"></td>
 	</tr>
-</table>
+
 
 ## 2. 개발 환경 및 배포 URL
 ### 2.1 개발 환경
