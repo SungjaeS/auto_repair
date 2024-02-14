@@ -2,32 +2,91 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Repair</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>자동차 진단 및 수리</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/style.css">
+
 </head>
 <body>
-    <div class="container">
-        <div class="topbar">
-            <a href="#" class="home-button">Auto Repair</a>
-            <div class="links">
-                <a href="#" class="signup-link">가입하기</a>
-                <a href="#" class="faq-link">FAQ</a>
-            </div>
-        </div>
-        <div class="prompt-container">
-            <div class="prompt">
-                <p align="left"><img src="my1.jpg" width="15%"></p>
-                <span id="promptText">질문을 입력하세요:</span>
-                <form id="questionForm">
-                    <input type="text" id="questionInput" placeholder="질문을 입력하세요...">
-                    <button type="submit">질문하기</button>
-                </form>
-            </div>
-        </div>
-        <div class="answer" id="answer"></div>
+    <div class="title-container">
+        <img src="image/my1.jpg" width="5%">
+        <h1>자동차 진단 및 수리 도우미</h1>
     </div>
-    <script src="script.js"></script>
+    <main class="cont-main">
+        <form action="diagnosis.php" method="post">
+            <p>자동차 브랜드</p>
+            <select name="car_model" required>
+                <option value="">자동차 브랜드 선택</option>
+                <option value="BENZ">BENZ</option>
+                <option value="BMW">BMW</option>
+                <option value="VW">VW</option>
+                <!-- 다른 자동차 모델들 추가 -->
+            </select><br>
+            <p>문제 증상을 설명해주세요</p>
+            <textarea name="issue_description" rows="4" cols="150" required></textarea><br>
+            <input type="submit" value="진단 시작">
+        </form>
+    </main>
+
+    <script>
+        const $input = document.getElementById('user-input');
+        const $button = document.getElementById('submit-btn');
+        const $answer = document.querySelector('.answer');
+        const $dialogContainer = document.getElementById('dialog-container');
+
+        const data = [];
+        data.push({
+            "role": "system",
+            "content": "assistant는 진단 및 수리 도우미입니다."
+        });
+
+        const url = 'https://open-api.jejucodingcamp.workers.dev/';
+
+        $button.addEventListener('click', e => {
+            e.preventDefault();
+            const contents = $input.value;
+            data.push({
+                "role": "user",
+                "content": contents
+            });
+            $input.value = '';
+
+            chatGPTAPI();
+        });
+
+        function chatGPTAPI() {
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data),
+                redirect: 'follow'
+            })
+            .then(res => res.json())
+            .then(res => {
+                console.log(res);
+                // 답변 온 것을 assistant로 저장
+                addSpeechBubble(res.choices[0].message.content);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                $answer.innerHTML = '<p>Error loading response</p>';
+            });
+        }
+
+        function addSpeechBubble(text = null) {
+            const content = text || document.getElementById("user-input").value.trim();
+
+            if (content !== "") {
+                const bubble = document.createElement("div");
+                bubble.className = "speech-bubble";
+                bubble.textContent = content;
+                $dialogContainer.appendChild(bubble);
+            }
+        }
+    </script>
 </body>
 </html>
