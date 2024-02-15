@@ -147,10 +147,8 @@ Auto repair with Chatgpt
 <br>
 
 ## 3. 요구사항 명세와 기능 명세
-- https://www.mindmeister.com/ 등을 사용하여 모델링 및 요구사항 명세를 시각화하면 좋습니다.
-- 이미지는 셈플 이미지입니다.
-<img src="map.png" width="100%">
-- 머메이드를 이용해 시각화 할 수 있습니다.
+- https://www.mindmeister.com/ 등을 사용.
+- 머메이드를 이용해 시각화.
   
 ```mermaid
     sequenceDiagram
