@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/common.css">
     <link rel="stylesheet" href="style/style.css">
-    <script src="./index.js" defer type="module"></script>
+    <!-- <script src="./index.js" defer type="module"></script> -->
 
 </head>
 <body>
@@ -16,46 +16,54 @@
         <h1>자동차 진단 및 수리 도우미</h1>
     </div>
     <main class="cont-main">
-        <form action="diagnosis.php" method="post">
+        <form>
             <p>자동차 브랜드</p>
             <select name="car_model" required>
                 <option value="">자동차 브랜드 선택</option>
                 <option value="BENZ">BENZ</option>
                 <option value="BMW">BMW</option>
-                <option value="VW">VW</option>
+                <option value="VW">VW</option> 
                 <!-- 다른 자동차 모델들 추가 -->
             </select><br>
-            <p>문제 증상을 설명해주세요</p>
-            <textarea name="issue_description" rows="4" cols="150" required></textarea><br>
-            <input type="submit" value="진단 및 수리 시작">
         </form>
+            <p>원하시는 진단 및 수리 내용을 설명해주세요</p>
+            <textarea name="issue_description" rows="4" cols="150" required></textarea><br>
+            <input type="submit" value="진단 및 수리 시작"><br>
+        </form>
+        <br><div class="answer"></div>
     </main>
 
     <script>
-        const $input = document.getElementById('user-input');
-        const $button = document.getElementById('submit-btn');
-        const $answer = document.querySelector('.answer');
-        const $dialogContainer = document.getElementById('dialog-container');
+// document.addEventListener('DOMContentLoaded', () => {
+//     const $form = document.querySelector('form');
+//     const $input = document.querySelector('textarea');
+//     const $answer = document.querySelector('.answer');
+//     const $dialogContainer = document.querySelector('.cont-main');
+        const $form = document.querySelector('form')
+        const $input = document.querySelector('textarea')
+        const $button = document.querySelector('input')
+        const $answer = document.querySelector('.answer')
 
-        const data = [];
+
+        const data = []
         data.push({
             "role": "system",
-            "content": "assistant는 진단 및 수리 도우미입니다."
-        });
+            "content": "assistant는 자동차 진단 및 수리 도우미입니다."
+        })
 
-        const url = 'https://open-api.jejucodingcamp.workers.dev/';
-
+        const url = `https://open-api.jejucodingcamp.workers.dev/`
+        
         $button.addEventListener('click', e => {
-            e.preventDefault();
-            const contents = $input.value;
+            e.preventDefault()
+            const contents = $input.value
             data.push({
                 "role": "user",
                 "content": contents
-            });
-            $input.value = '';
+            })
+            $input.value = ''
 
-            chatGPTAPI();
-        });
+            chatGPTAPI()
+        })
 
         function chatGPTAPI() {
             fetch(url, {
@@ -68,25 +76,10 @@
             })
             .then(res => res.json())
             .then(res => {
-                console.log(res);
+                console.log(res)
                 // 답변 온 것을 assistant로 저장
-                addSpeechBubble(res.choices[0].message.content);
+                $answer.innerHTML = `<p>${res.choices[0].message.content}</p>`
             })
-            .catch(error => {
-                console.error('Error:', error);
-                $answer.innerHTML = '<p>Error loading response</p>';
-            });
-        }
-
-        function addSpeechBubble(text = null) {
-            const content = text || document.getElementById("user-input").value.trim();
-
-            if (content !== "") {
-                const bubble = document.createElement("div");
-                bubble.className = "speech-bubble";
-                bubble.textContent = content;
-                $dialogContainer.appendChild(bubble);
-            }
         }
     </script>
 </body>
