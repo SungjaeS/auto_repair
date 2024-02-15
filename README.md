@@ -283,7 +283,7 @@ gantt
 
 ## 7. 데이터베이스 모델링(ERD)
 
-* 아래 ERD는 머메이드를 사용했습니다.
+<!-- * 아래 ERD는 머메이드를 사용했습니다. -->
 ```mermaid
 erDiagram
     user ||--o{ post : write
@@ -335,10 +335,10 @@ erDiagram
     }
 ```
 
-* 아래 ERD는 [ERDCloud](https://www.erdcloud.com/)를 사용했습니다.
-<img src="erd.png" width="60%">
+<!-- * 아래 ERD는 [ERDCloud](https://www.erdcloud.com/)를 사용했습니다.
+<img src="erd.png" width="60%"> -->
 
-* https://dbdiagram.io/home도 많이 사용합니다.
+<!-- * https://dbdiagram.io/home도 많이 사용합니다. -->
 
 ## 8. Architecture
 
