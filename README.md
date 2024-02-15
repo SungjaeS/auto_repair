@@ -28,7 +28,7 @@ Auto repair with Chatgpt
 		<th>신성재</th>
 	</tr>
  	<tr>
-		<td><p align="center"><img src="image/my1.jpg" width="15%"></p></td>
+		<td><p align="center"><img src="image/my1.png" width="10%"></p></td>
 	</tr>
 </table>
 
