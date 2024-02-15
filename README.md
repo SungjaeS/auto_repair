@@ -171,14 +171,14 @@ Auto repair with Chatgpt
 
 ## 4. 프로젝트 구조와 개발 일정
 ### 4.1 프로젝트 구조
-
+```
 📦AUTO_REPAIR
  ┣ 📂image
  ┃ ┗ 📜my1.png
  ┣ 📂style
  ┃ ┗ 📜style.css
  ┗ 📜index.html
-
+```
 
 ### 4.1 개발 일정(WBS)
 ```mermaid
