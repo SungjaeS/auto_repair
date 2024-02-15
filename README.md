@@ -223,10 +223,10 @@ gantt
         </tr>
         <tr>
             <td>
-		<img src="image/ss2.png" width="50%">
+		<img src="image/ss2.png" width="100%">
             </td>
             <td>
-                <img src="image/ss3.png" width="50%">
+                <img src="image/ss3.png" width="100%">
             </td>
         </tr>
         <!-- <tr>
