@@ -218,15 +218,15 @@ gantt
 <table>
     <tbody>
         <tr>
-            <td><p align="center">메인<p></td>
-            <td><p align="center">로그인<p></td>
+            <td><p align="center">도움답변<p></td>
+            <td><p align="center">질문답변<p></td>
         </tr>
         <tr>
             <td>
-		<img src="image/ss2.png" width="100%">
+		<img src="image/ss2.png" width="150%">
             </td>
             <td>
-                <img src="image/ss3.png" width="100%">
+                <img src="image/ss3.png" width="150%">
             </td>
         </tr>
         <!-- <tr>
