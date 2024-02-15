@@ -80,7 +80,7 @@ input[type="submit"]:hover {
     width: 1000px;
     margin-top: 20px;
     padding: 10px;
-    border: 0px solid #white;
+    border: 0px solid white;
     border-radius: 5px;
     background-color: #333;
     color: #fff;
@@ -89,7 +89,7 @@ input[type="submit"]:hover {
 
 .answer p {
     margin: 0;
-    color: #white;
+    color: white;
     font-size: 16px;
 }
 
