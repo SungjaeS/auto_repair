@@ -147,8 +147,8 @@ Auto repair with Chatgpt
 <br>
 
 ## 3. 요구사항 명세와 기능 명세
-- https://www.mindmeister.com/ 등을 사용.
-- 머메이드를 이용해 시각화.
+<!-- - https://www.mindmeister.com/ 등을 사용.
+- 머메이드를 이용해 시각화. -->
   
 ```mermaid
     sequenceDiagram
