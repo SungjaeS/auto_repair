@@ -16,12 +16,11 @@ body {
     text-align: center;
     background-color: #000;
     color: #fff;
-    height: 100vh; /* 화면 전체 높이를 차지하도록 설정합니다. */
+    height: 100vh; /* 화면 전체 높이를 차지하도록 설정. */
 }
 
 h1 {
     color: grey;
-    
 }
 
 p {
@@ -38,6 +37,7 @@ input[type="text"], select {
     border: none;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
 }
 
 input[type="text"], textarea {
@@ -59,6 +59,7 @@ input[type="submit"] {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 input[type="submit"]:hover {
@@ -80,8 +81,9 @@ input[type="submit"]:hover {
 }
 
 .answer {
+    height: 40;
     width: 1000px;
-    margin-top: 20px;
+    margin-top: 0px;
     padding: 10px;
     border: 0px solid white;
     border-radius: 5px;

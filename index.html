@@ -34,21 +34,16 @@
     </main>
 
     <script>
-// document.addEventListener('DOMContentLoaded', () => {
-//     const $form = document.querySelector('form');
-//     const $input = document.querySelector('textarea');
-//     const $answer = document.querySelector('.answer');
-//     const $dialogContainer = document.querySelector('.cont-main');
         const $form = document.querySelector('form')
         const $input = document.querySelector('textarea')
         const $button = document.querySelector('input')
         const $answer = document.querySelector('.answer')
 
 
-        const data = []
+        const data = [];
         data.push({
             "role": "system",
-            "content": "assistant는 자동차 진단 및 수리 도우미입니다."
+            "content": "정비봇은 자동차 진단 및 수리 전문 도우미입니다."
         })
 
         const url = `https://open-api.jejucodingcamp.workers.dev/`
