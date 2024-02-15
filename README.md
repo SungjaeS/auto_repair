@@ -34,10 +34,9 @@ Auto repair with Chatgpt
 
 ## 2. 개발 환경 및 배포 URL
 ### 2.1 개발 환경
-- Web Framework
-  - Django 3.x (Python 3.8)
+- Visual Studio Code
 - 서비스 배포 환경
-  - Amazon Lightsail
+  - Github
 
 ### 2.2 배포 URL
 - https://sungjaes.github.io/auto_repair/
