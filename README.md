@@ -208,25 +208,25 @@ gantt
 
 ### 6.1 와이어프레임
 
-- 기본 페이지
-<img src="image/ss1.png" width="50%">
+<p align="center">- 기본 페이지<p>
+<img src="image/ss1.png" width="80%">
 
-- 와이어 프레임은 디자인을 할 수 있다면 '피그마'를, 디자인을 할 수 없다면 '카카오 오븐'으로 쉽게 만들 수 있습니다.
+<!-- - 와이어 프레임은 디자인을 할 수 있다면 '피그마'를, 디자인을 할 수 없다면 '카카오 오븐'으로 쉽게 만들 수 있습니다. -->
 
 ### 6.2 화면 설계
 <!-- - 화면은 gif파일로 업로드해주세요. -->
 <table>
     <tbody>
         <tr>
-            <td>메인</td>
-            <td>로그인</td>
+            <td><p align="center">메인<p></td>
+            <td><p align="center">로그인<p></td>
         </tr>
         <tr>
             <td>
-		<img src="image/ss2.png" width="20%">
+		<img src="image/ss2.png" width="250%">
             </td>
             <td>
-                <img src="image/ss3.png" width="20%">
+                <img src="image/ss3.png" width="50%">
             </td>
         </tr>
         <!-- <tr>
