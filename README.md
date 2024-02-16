@@ -43,7 +43,7 @@ Auto repair with Chatgpt
 ### 2.2 배포 URL
 - https://sungjaes.github.io/auto_repair/
 
-### 2.3 URL 구조(모놀리식)
+<!-- ### 2.3 URL 구조(모놀리식)
 - main
 
 | App       | URL                                        | Views Function    | HTML File Name                        | Note           |
@@ -167,7 +167,7 @@ Auto repair with Chatgpt
     C->>+B: False
     B->>+A: 로그인 실패
     end
-```
+``` -->
 
 ## 4. 프로젝트 구조와 개발 일정
 ### 4.1 프로젝트 구조
